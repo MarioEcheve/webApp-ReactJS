@@ -15,7 +15,7 @@ function AddCategorias({ setCategorias }) {
         if(inputValue.trim().length > 2 ){
             // se llama de esta forma porque es un callback
             // esto es util ya que el callback maneja el estado anterior, ya que no se tiene acceso al valor de las categorias
-            setCategorias( categorias =>[...categorias,inputValue]);
+            setCategorias( categorias =>[inputValue,...categorias]);
             setInputValue('');
         }
     }
